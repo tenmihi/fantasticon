@@ -4,6 +4,8 @@ import { FontAssetType, OtherAssetType } from './types/misc';
 
 export const TEMPLATES_DIR = resolve(__dirname, '../templates');
 
+export const DEFAULT_START_CODEPOINT = 0xf101;
+
 export const DEFAULT_OPTIONS: Omit<RunnerOptions, 'inputDir' | 'outputDir'> = {
   name: 'icons',
   fontTypes: [FontAssetType.EOT, FontAssetType.WOFF2, FontAssetType.WOFF],
@@ -24,7 +26,6 @@ export const DEFAULT_OPTIONS: Omit<RunnerOptions, 'inputDir' | 'outputDir'> = {
   selector: null,
   tag: 'i',
   prefix: 'icon',
-  fontsUrl: undefined
+  fontsUrl: undefined,
+  startCodepoint: DEFAULT_START_CODEPOINT,
 };
-
-export const DEFAULT_START_CODEPOINT = 0xf101;
