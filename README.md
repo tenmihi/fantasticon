@@ -145,6 +145,7 @@ generateFonts({
   templates: {},
   pathOptions: {},
   codepoints: {},
+  startCodepoint: 0xf101,
   fontHeight: 300,
   round: undefined, // --
   descent: undefined, // Will use `svgicons2svgfont` defaults
